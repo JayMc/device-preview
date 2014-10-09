@@ -13,7 +13,7 @@ $.devicescroll = {
 	    defaults: { // default settings
 	    	webpageImg: 'http://placehold.it/300x600',
 	    	speed: 2500,
-
+	    	ease: 'swing'
 	    },
 	    options: {
 	    	//will be populated on init with defaults and init params
@@ -60,10 +60,10 @@ $.devicescroll = {
 					//mouse over
 	                $(this).find('#macCtrl').hover(
 		                function(){
-							$(macScreen).animate({"top":""+moveDistance+"px"},opts.speed);
+							$(macScreen).animate({"top":""+moveDistance+"px"}, opts.speed, opts.ease);
 						},
 						function(){
-							$(macScreen).animate({"top":"0px"},opts.speed);
+							$(macScreen).animate({"top":"0px"}, opts.speed, opts.ease);
 					});
 
 

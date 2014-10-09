@@ -6,7 +6,8 @@ Scrolls video device (iMac screen) over a webpage as a long formated image. Dire
 ## Usage
 
 ```
-
+<!-- requires jQuery to be loaded first -->
+<!-- If you want to change animation easing types you will need to load jQuery UI-->
 <script src="devicepreview.js"></script>
 
 <div id="devicescrollhere"></div>
@@ -14,13 +15,14 @@ Scrolls video device (iMac screen) over a webpage as a long formated image. Dire
 <script>
 $('#devicescrollhere').devicescroll({
 				webpageImg: 'webpage.png',
-				speed: 3000
+				speed: 3000,
+				ease: 'swing' //requires jQuery UI (http://api.jqueryui.com/easings/) (tip: stick with an InOut one)
 			});
 </script>
 ```
 
 ## Options
-### type: 
+
 - webpageImg: image file of webpage to show
 - speed in which to scroll
-
+- ease type of easing the animation will use (requires jQuery UI)
