@@ -1,0 +1,36 @@
+<html>
+	<head>
+	<title>Device preview jQuery plugin example</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="devicepreview.js"></script>
+
+	</head>
+	<body>
+
+		<!-- using plugin -->
+		<div id="devicescrollhere" style="left:400px;top:50px;">
+		</div>
+		<div id="devicescrollhere2" style="top:0px;">
+		</div>
+
+			
+
+		<script type="text/javascript">
+		$(document).ready(function(){
+			
+			// using plugin
+			$('#devicescrollhere').devicescroll({
+				webpageImg: 'assets/news.com.au.png',
+				speed: 6000
+			});
+			$('#devicescrollhere2').devicescroll({
+				webpageImg: 'assets/RAHerbal.png',
+				speed: 3000
+			});
+
+
+
+		})
+		</script>
+	</body>
+</html>
