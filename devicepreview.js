@@ -32,8 +32,6 @@ $.devicescroll = {
 	                //combine defaults and params into options
 	                var opts = $.extend({},$.devicescroll.defaults, params);
 
-	                //add css to initial container
-	                $(this).css('position','absolute');
 
 	                //add webpage image (long image)
 	                $(this).append('<img id="webpage" src="" width="300px" style="top:0px;z-index:-1;overflow:hidden;position:relative;display:block" />');
